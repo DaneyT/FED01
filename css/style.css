@@ -1,0 +1,64 @@
+body{
+    background-image: url(../img/backgroundSW.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#mainPanel
+{
+    background-color: rgba(74, 74, 74, 0.9);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+#infoSubPanel
+{
+    background-color: rgba(50, 50, 50, 1);
+    width: 20%;
+}
+
+
+.box{
+    width: 200px;
+    height: 200px;
+    background: red;
+}
+
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    font-size: 5em;
+}
+
+/*parent*/
+#movies {
+    display: -webkit-flex;
+    display: flex;
+    /*min-height: 100vh;*/
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    float: left;
+    /*border: 10px solid black;*/
+}
+
+/*child*/
+.card {
+    width:calc(50% - 20px);
+    padding: 10px;
+    border: 3px solid #fff;
+    background-color: rgba(88, 88, 88, 0.9);
+    border-radius: 10px;
+    float: left;
+}
+
+.error{
+    color: red;
+    background: yellow;
+}
